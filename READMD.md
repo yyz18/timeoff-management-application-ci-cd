@@ -1,5 +1,3 @@
 # Time OFF Management Applicaiton CI/CD
 
-<br>
-![architecturediagram](https://github.com/yyz18/timeoff-management-application-ci-cd/blob/main/TimeOffAppArchDiagram.png "Architecture Diagram")
-<br>
+![TimeOffAppArchDiagram](https://user-images.githubusercontent.com/36462985/222253330-7151db25-6585-4262-9b1f-e9f2849e5229.png)
