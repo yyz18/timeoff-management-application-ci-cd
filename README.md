@@ -1,4 +1,4 @@
-# Timeoff management application CI/CD
+# Timeoff-management application CI/CD
 
 <br>
 <p align="center">
