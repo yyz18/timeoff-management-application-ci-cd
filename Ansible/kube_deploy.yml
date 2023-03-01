@@ -1,0 +1,13 @@
+---
+- hosts: kubernetes
+  user: root
+
+  tasks:
+  - name: Deploy TimeOffManager on Kubernetes
+    command: kubectl apply -f /tmp/deploy.yml
+
+  - name: Create a service for TimeOffManager
+    command: kubectl apply -f /tmp/service.yml
+
+  - name: 
+    command: kubectl rollout restart deployment.v1.apps/mozubayer-timeoffapp

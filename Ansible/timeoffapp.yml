@@ -1,0 +1,14 @@
+---
+- hosts: ansible
+
+  tasks:
+  - name: Create docker image
+    command: docker build -f /opt/docker/Dockerfile -t timeoffapp:latest .
+    args:
+      chdir: /opt/docker/timeoffmanager
+
+  - name: Create tag to push image onto dockerhub
+    command: docker tag timeoffapp:latest mozubayer/timeoffapp:latest
+
+  - name: Upload docker image to dockerhub
+    command: docker push mozubayer/timeoffapp:latest
