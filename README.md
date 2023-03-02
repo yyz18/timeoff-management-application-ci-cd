@@ -15,7 +15,8 @@ The Timeoff-management application is accessible at [https://venisso.com](https:
 <h3> Technology Stack </h3>
 The pipeline is implemented in AWS utilizing some open sources tools. The following is a list of the tools employed:
 <br>
-**GitHub** serves as the source code management repository <br>
+**GitHub** serves as the source code management repository 
+<br>
 **Jenkins** implements CI/CD pipeline <br>
 **Ansible** packages the application into a docker image and uploads it to Docker Hub <br>
 **Docker Hub** stores the application docker image <br>
