@@ -30,8 +30,7 @@ __Kubernetes__ runs application containers
 
 __eksctl__ is used to create the Kubernetes cluster 
 
-__kubectl__ is used to manage the Kubernetes cluster 
-   __AWS__ Certificate Manager issues public certificate for SSL/TLS encryption
+__kubectl__ is used to manage the Kubernetes cluster <br> __AWS__ Certificate Manager issues public certificate for SSL/TLS encryption
 
 <h3> Workflow </h3>
 <p>
