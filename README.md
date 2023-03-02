@@ -6,7 +6,7 @@ Architecture Diagram
 <br>
 <br>
 
-<img src="https://user-images.githubusercontent.com/36462985/222253330-7151db25-6585-4262-9b1f-e9f2849e5229.png" width="640">
+<img src="https://user-images.githubusercontent.com/36462985/222532256-398ca7b9-db37-41c2-8b8d-19ca26fd7255.png" width="640">
 </p>
 
 The Timeoff-management application is accessible at [https://venisso.com](https://venisso.com). Any attempt to access it using an http address is automatically redirected to https, thereby ensuring secure communication between the client and the application server. The application is highly available and load balanced in two availability zones. 
