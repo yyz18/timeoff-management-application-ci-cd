@@ -9,7 +9,7 @@ Architecture Diagram
 <img src="https://user-images.githubusercontent.com/36462985/222253330-7151db25-6585-4262-9b1f-e9f2849e5229.png" width="640">
 </p>
 
-The Timeoff-management application is accessible at [https://venisso.com](https://venisso.com). Any attempt to access it using an http address is automatically redirected to https, thereby ensuring secure communication between the client and the application server. The application is highly available and load balanced in two availability zones.
+The Timeoff-management application is accessible at [https://venisso.com](https://venisso.com). Any attempt to access it using an http address is automatically redirected to https, thereby ensuring secure communication between the client and the application server. The application is highly available and load balanced in two availability zones. 
 </p>
 
 
@@ -21,15 +21,12 @@ The pipeline, fully automated from code-change to deployment, is implemented in 
 __GitHub__ serves as the source code management repository <br> __Jenkins__ implements CI/CD jobs <br> __Ansible__ packages the application into a docker image and uploads it to Docker Hub <br> __Docker/Docker Hub__ containerizes the applicaiton into a Docker image and stores it in a repository <br> __Kubernetes__ runs application containers <br> __eksctl__ is used to create the Kubernetes cluster <br> __kubectl__ is used to manage the Kubernetes cluster <br> __AWS Certificate Manager__ issues public certificate for SSL/TLS encryption <br> __Terraform__ is used to provision AWS resrouces
 
 <h3> Workflow </h3>
-<p>
-  Whenever there is a code-change pushed to the GitHub repository [a link](https://github.com/user/repo/blob/branch/other_file.md)
   
-  [timeoff-management-application](https://github.com/yyz18/timeoff-management-application.git), it triggers a Jenkins CI job. This job then copies the complete application onto the Ansible server and runs an Ansible playbook to containerize it into a Docker image. It then uploads the image to a Docker Hub repository. Once the CI job is completed successfully, the CD job starts.
+  Whenever there is a code-change pushed to the GitHub repository [timeoff-management-application](https://github.com/yyz18/timeoff-management-application.git), it triggers a Jenkins CI job. This job then copies the complete application onto the Ansible server and runs an Ansible playbook to containerize it into a Docker image. It then uploads the image to a Docker Hub repository. Once the CI job is completed successfully, the CD job starts.
 
   The CD job runs Kubernetes manifest scripts to create a deployment and a service on the Kubernetes cluster, which consists of two nodes distributed across two different availability zones. The deployment is designed to facilitate rolling updates while ensuring at least one healthy pod is maintained at all times, resulting in zero downtime.
   
   The network connection between a client's browser and the application server is made secure through the provision of SSL/TLS certificates issued by AWS.
-</p>
 
 <h3> IAC </h3>
 <p>
