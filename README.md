@@ -26,7 +26,7 @@ __GitHub__ serves as the source code management repository <br> __Jenkins__ impl
 
   The CD job runs Kubernetes manifest scripts to create a deployment and a service on the Kubernetes cluster, which consists of two nodes distributed across two different availability zones. The deployment is designed to facilitate rolling updates while ensuring at least one healthy pod is maintained at all times, resulting in zero downtime.
   
-  The network connection between a client's browser and the application server is made secure through the provision of SSL/TLS certificates by AWS.
+  The network connection between a client's browser and the application server is made secure through the provision of SSL/TLS certificates issued by AWS.
 </p>
 
 <h3> IAC </h3>
