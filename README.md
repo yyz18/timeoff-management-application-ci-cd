@@ -24,7 +24,7 @@ __GitHub__ serves as the source code management repository <br> __Jenkins__ impl
 <p>
   Whenever there is a code-change pushed to the GitHub repository, it triggers a Jenkins CI job. This job then copies the complete application onto the Ansible server and runs an Ansible playbook to containerize it into a Docker image. It then uploads the image to a Docker Hub repository. Once the CI job is completed successfully, the CD job starts.
 
-  The CD job runs Kubernetes manifest scripts to create a deployment and a service on the Kubernetes cluster, which consists of three nodes distributed across three different availability zones. The deployment is designed to facilitate rolling updates while ensuring at least one healthy node is maintained at all times, resulting in zero downtime.
+  The CD job runs Kubernetes manifest scripts to create a deployment and a service on the Kubernetes cluster, which consists of two nodes distributed across two different availability zones. The deployment is designed to facilitate rolling updates while ensuring at least one healthy node is maintained at all times, resulting in zero downtime.
   
   The network connection between a client's browser and the application server is made secure through the provision of SSL/TLS certificates by AWS.
 </p>
