@@ -15,22 +15,33 @@ The imeoff-management application is accessible at [https://venisso.com](https:/
 <h3> Technology Stack </h3>
 The pipeline is implemented in AWS utilizing some open sources tools. The following is a list of the tools employed:
 
-<br><br>
-
 __GitHub__ serves as the source code management repository 
 
 <br>
+
 __Jenkins__ implements CI/CD pipeline 
+
 <br>
+
 __Ansible__ packages the application into a docker image and uploads it to Docker Hub 
+
 <br>
+
 __Docker Hub__ stores the application docker image 
+
 <br>
+
 __Kubernetes__ runs application containers 
+
 <br>
+
 __eksctl__ is used to create the Kubernetes cluster 
+
 <br>
+
 __kubectl__ is used to manage the Kubernetes cluster 
+
 <br>
+
 __AWS__ Certificate Manager issues public certificate for SSL/TLS encryption <br>
 
