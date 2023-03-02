@@ -18,8 +18,7 @@ The Timeoff-management application is accessible at [https://venisso.com](https:
 The pipeline is implemented in AWS utilizing various open sources tools. The following is a list of the tools employed:
 </p>
 
-__GitHub__ serves as the source code management repository <br> __Jenkins__ implements CI/CD pipeline <br> __Ansible__ packages the application into a docker image and uploads it to Docker Hub <br> __Docker__ containerizes the applicaiton into a Docker image <br> __Docker Hub__ stores the application docker image <br> __Kubernetes__ runs application containers <br> 
-__eksctl__ is used to create the Kubernetes cluster <br> __kubectl__ is used to manage the Kubernetes cluster <br> __AWS Certificate Manager__ issues public certificate for SSL/TLS encryption <br> __Terraform__ is used to provision AWS resrouces.
+__GitHub__ serves as the source code management repository <br> __Jenkins__ implements CI/CD pipeline <br> __Ansible__ packages the application into a docker image and uploads it to Docker Hub <br> __Docker/Docker Hub__ containerizes the applicaiton into a Docker image and stores it in a repository <br> __Kubernetes__ runs application containers <br> __eksctl__ is used to create the Kubernetes cluster <br> __kubectl__ is used to manage the Kubernetes cluster <br> __AWS Certificate Manager__ issues public certificate for SSL/TLS encryption <br> __Terraform__ is used to provision AWS resrouces.
 
 <h3> Workflow </h3>
 <p>
