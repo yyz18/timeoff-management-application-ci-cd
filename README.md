@@ -17,27 +17,15 @@ The pipeline is implemented in AWS utilizing some open sources tools. The follow
 
 __GitHub__ serves as the source code management repository 
 
-<br>
-
 __Jenkins__ implements CI/CD pipeline 
-
-<br>
 
 __Ansible__ packages the application into a docker image and uploads it to Docker Hub 
 
-<br>
-
 __Docker Hub__ stores the application docker image 
-
-<br>
 
 __Kubernetes__ runs application containers 
 
-<br>
-
 __eksctl__ is used to create the Kubernetes cluster 
-
-<br>
 
 __kubectl__ is used to manage the Kubernetes cluster 
 
