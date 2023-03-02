@@ -23,7 +23,7 @@ __eksctl__ is used to create the Kubernetes cluster <br> __kubectl__ is used to 
 
 <h3> Workflow </h3>
 <p>
-  Whenever there are changes in the code, it is pushed to the GitHub repository, which triggers a Jenkins CI job. This job then copies the complete application onto the Ansible server and runs an Ansible playbook to containerize it into a Docker image. It then uploads the image to a Docker Hub repository. Once the CI job is completed successfully, the CD job starts.
+  Whenever there is a code change pushed to the GitHub repository, it triggers a Jenkins CI job. This job then copies the complete application onto the Ansible server and runs an Ansible playbook to containerize it into a Docker image. It then uploads the image to a Docker Hub repository. Once the CI job is completed successfully, the CD job starts.
 
   The CD job runs Kubernetes manifest scripts to create a deployment and a service on the Kubernetes cluster, which consists of three nodes distributed across three different availability zones. The deployment is designed to facilitate rolling updates while ensuring at least one healthy node is maintained at all times, resulting in zero downtime.
   
