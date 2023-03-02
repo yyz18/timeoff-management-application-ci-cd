@@ -2,7 +2,7 @@
 
 <br>
 <p align="center">
-_Architecture Diagram_
+Architecture Diagram
 <br>
 <br>
 
