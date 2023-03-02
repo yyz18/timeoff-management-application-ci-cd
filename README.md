@@ -31,5 +31,5 @@ __GitHub__ serves as the source code management repository <br> __Jenkins__ impl
 
 <h3> IAC </h3>
 <p>
-  While Terraform scripts can provision EC2 instances in the default VPC with necessary packages installed, some tasks such as creating Jenkins jobs, configuring authentication between instances, and deploying Ansible and Kubernetes scripts need to be completed manually.
+  While the Terraform scripts can provision EC2 instances in the default VPC with necessary packages installed, some tasks such as creating Jenkins jobs, configuring authentication between instances, and deploying Ansible and Kubernetes scripts need to be completed manually.
 </p>
