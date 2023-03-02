@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mozubayer-timeoffapp
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: timeoffapp
+
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: timeoffapp
+    spec:
+      containers:
+      - name: timeoffapp
+        image: mozubayer/timeoffapp
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
