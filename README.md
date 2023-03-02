@@ -40,6 +40,5 @@ __eksctl__ is used to create the Kubernetes cluster
 <br>
 
 __kubectl__ is used to manage the Kubernetes cluster 
-
 __AWS__ Certificate Manager issues public certificate for SSL/TLS encryption <br>
 
