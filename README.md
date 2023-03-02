@@ -17,7 +17,7 @@ The pipeline is implemented in AWS utilizing some open sources tools. The follow
 
 **GitHub** serves as the source code management repository
 Jenkins implements CI/CD pipeline
-Ansible packages the application into a docker image and uploads it to Docker Hub
+  Ansible packages the application into a docker image and uploads it to Docker Hub
 Docker Hub stores the application docker image
 Kubernetes runs application containers
 eksctl is used to create the Kubernetes cluster
